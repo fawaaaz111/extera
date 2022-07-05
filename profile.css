@@ -1,0 +1,264 @@
+:root {
+    --primary: #192156;
+    --secondary: #27ae60;
+    --accent: #666;
+}
+
+/* resting all to zero */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-family: 'El Messiri', cursive;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+/* body */
+body {
+    background: #f5f5f5;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.my-profile {
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    /* background: #eee; */
+}
+
+.pro-content {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.2); */
+}
+
+.us-name-img {
+    float: right;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 3px solid var(--accent);
+}
+
+.pro-content .img {
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pro-content .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.pro-info {
+    list-style-type: none;
+    width: 20%;
+    padding: 30px 0px;
+}
+
+.pro-info li {
+    width: 100%;
+    height: 3em;
+    color: var(--accent);
+    background: #eee;
+    margin-bottom: 2px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+
+.pro-info li a {
+    color: var(--accent);
+}
+
+.pro-info li i {
+    color: var(--primary);
+}
+
+.pro-info li:hover {
+    background: var(--secondary);
+    cursor: pointer;
+}
+
+.pro-info li:hover a{
+    color: #fff;
+}
+
+.opreations {
+    width: 60%;
+}
+
+.opreations-content {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    width: 100%;
+}
+.opreations-content li {
+    border-bottom: 3px solid var(--accent);
+    padding-right: 3em;
+    padding-left: 3em;
+    margin-bottom: -3px;
+}
+
+.opreations-content li a {
+    width: 100%;
+    height: 100%;
+    color: var(--accent);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.opreations-content li:hover a{
+    cursor: pointer;
+    color: #fff;
+    background: var(--secondary);
+}
+
+.opreations-content li.active {
+    border-bottom: none;
+    background: var(--secondary);
+}
+
+.all-content {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sec {
+    display: none;
+}
+
+.sec.active {
+    display: block;
+}
+
+.account {
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.acc-Img, .acc-info, .add-property {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.acc-info input{
+    width: 100%;
+    height: 3em;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+.acc-info input[type="submit"], 
+.add-property .add-prop {
+    background: var(--primary);
+    color: #fff;
+}
+
+.acc-info input[type="submit"]:hover {
+    background: var(--secondary);
+    cursor: pointer;
+    width: 99%;
+}
+
+.add-property  h3 {
+    color: var(--accent);
+}
+
+.add-property input, .add-prop {
+ width: 50%;
+ height: 3em;
+ margin-bottom: 10px;
+ background: #fff;
+ border-radius: 10px;
+ padding-right: 10px;
+}
+
+.add-prop:hover {
+    background: var(--secondary);
+    cursor: pointer;
+}
+
+.customers table, .messages table,
+.sales table, .bought table {
+    background: #fff;
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.customers th, tr, .messages th, tr,
+.sales th, tr, .bought th, tr{
+    border: 1px solid var(--accent);
+    border-collapse: collapse;
+}
+
+.customers th, .messages th, 
+.sales th, .bought th {
+    background: var(--primary);
+    color: #fff;
+}
+
+.customers th:nth-child(1), 
+.messages th:nth-child(1),
+.sales th:nth-child(1),
+.bought th:nth-child(1) {
+    width: 10%;
+}
+
+.customers table tr:nth-child(even),
+.messages table tr:nth-child(even),
+.sales table tr:nth-child(even),
+.bought table tr:nth-child(even) {
+    background: #eee;
+}
